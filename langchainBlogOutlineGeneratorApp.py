@@ -1,16 +1,10 @@
-# Bu kod Langchain ve Streamlit kullanarak bir blog yazısı için taslak oluşturmamıza yardımcı olacak bir uygulama oluşturur. 
-
 import streamlit as st
 from langchain_openai import ChatOpenAI
-from langchain.prompts import PromptTemplate    # PromptTemplate bir metin şablonu oluşturur.
+from langchain.prompts import PromptTemplate 
 
 st.title("🦜🔗 Langchain - Blog Outline Generator App")
 
 openai_api_key = "sk-proj-CjCrQtfnzXk6DJdWlB6lT3BlbkFJ5g9P1a0uUZQEb284IFnB"
-
-# openai_api_key = st.sidebar.text_input("OpenAI API Key", type="password")
-
-# blog_outline fonksiyonu blog için topic konusunda bir taslak oluşturur. template değişkeni dil modelinin belirli bir görevi nasıl yerine getireceğini anlatan bir şablon metnini içerir. {topic} şablon metninde yer tutucu (placeholder) olarak kullanılır. Kullanıcının girdiği konu {topic}'e yerleşir. input_variables parametresi şablon metnindeki yer tutucuların hangi giriş değişkenleri ile doldurulacağını belirtir. template=template parametresi tanımlanan şablon metnini belirtir. prompt, PromptTemplate sınıfından oluşturulmuş bir nesnedir. format metodu şablondaki yer tutucuları belirli giriş verileri ile doldurur. llm dil modeline prompt_query metni gönderilir ve modelin bu metne yanıt üretmesi sağlanır. 
 
 def blog_outline(topic):
     # LLM modelinin başlatılması
