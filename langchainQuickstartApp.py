@@ -3,7 +3,7 @@ from langchain_openai.llms import OpenAI
 
 st.title("🦜🔗 Langchain Quickstart App")
 
-openai_api_key = "sk-proj-CjCrQtfnzXk6DJdWlB6lT3BlbkFJ5g9P1a0uUZQEb284IFnB"
+openai_api_key = "your_api_key"
 
 with st.sidebar:
     # openai_api_key = st.text_input("OpenAI API Key", type="password")
