@@ -4,7 +4,7 @@ from langchain.prompts import PromptTemplate
 
 st.title("🦜🔗 Langchain - Blog Outline Generator App")
 
-openai_api_key = "sk-proj-CjCrQtfnzXk6DJdWlB6lT3BlbkFJ5g9P1a0uUZQEb284IFnB"
+openai_api_key = "your_api_key"
 
 def blog_outline(topic):
     # LLM modelinin başlatılması
