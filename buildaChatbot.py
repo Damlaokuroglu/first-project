@@ -1,7 +1,7 @@
 import streamlit as st
 from openai import OpenAI
 
-openai_api_key = "sk-proj-CjCrQtfnzXk6DJdWlB6lT3BlbkFJ5g9P1a0uUZQEb284IFnB"
+openai_api_key = "your_api_key"
 
 with st.sidebar:
     "[Get an OpenAI API key](https://platform.openai.com/account/api-keys)"
